@@ -1,0 +1,14 @@
+# Dependency directories (node_modules is generally ignored by default)
+/node_modules
+
+# macOS specific files
+.DS_Store
+
+# Logs
+npm-debug.log*
+
+# Environment variables
+.env
+
+# IDE specific files (example for Visual Studio Code)
+.vscode

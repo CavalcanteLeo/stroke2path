@@ -1,0 +1,50 @@
+{
+  "name": "@leo.cavalcante/stroke2path",
+  "version": "1.0.5",
+  "description": "Converts SVG strokes to paths using Inkscape",
+  "main": "dist/stroke2path.js",
+  "bin": {
+    "stroke2path": "stroke2path-wrapper.sh"
+  },
+  "scripts": {
+    "start": "tsc && node dist/stroke2path.js",
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "prepublishOnly": "npm run build",
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "author": "Leonardo Cavalcante",
+  "license": "MIT",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.10",
+    "@types/readline-sync": "^1.4.8",
+    "eslint": "^9.6.0",
+    "husky": "^9.0.11",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.2",
+    "typescript": "^5.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CavalcanteLeo/stroke2path.git"
+  },
+  "keywords": [
+    "svg",
+    "fontello",
+    "icomoon"
+  ],
+  "bugs": {
+    "url": "https://github.com/CavalcanteLeo/stroke2path/issues"
+  },
+  "homepage": "https://github.com/CavalcanteLeo/stroke2path#readme"
+}
